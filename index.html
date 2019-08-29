@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>animated door</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class='door-container'>
+  <div class='door-frame'>
+    <div class='door'>
+      <div class='door-part'></div>
+      <div class='door-part'></div>
+      <div class='door-part'></div>
+      <div class='door-part'></div>      
+      <div class='door-part'>
+        <div class='knob'></div>
+      </div>
+      
+    </div>
+    <div class='light'>
+    <svg class="defs">
+      <defs>
+      <symbol id="s-star" viewbox="0 0 210 210">
+        <polygon points="98.4999978 153.75 38.2520165 185.424245 49.7583542 118.337123 1.01670635 70.8257603 68.3760155 61.037872 98.5000012 1.1379786e-14 128.624005 61.0378871 195.98331 70.8258091 147.241642 118.337136 158.747982 185.424247" transform="translate(10,10)"/>
+      </symbol>
+      
+      <radialGradient id="gr-radial-lights" 
+      cx="50%" cy="50%" r="70%">
+        <stop stop-color="gold" offset="5%"
+          stop-opacity="1"/>
+        <stop stop-color="white" offset="100%" stop-opacity="0.4"/> 
+      </radialGradient>
+    </defs>
+</svg>
+    <div class="demo demo--lights">
+      <svg viewbox="0 0 1024 640">
+        <svg viewbox="0 0 640 640">
+          <g transform="scale(1)">
+          <circle class="c-lights" r="64%" cx="50%" cy="50%"
+            stroke-width="128%" stroke-dasharray="5%"
+                    stroke="url(#gr-radial-lights)"/>
+           </g>   
+        </svg>
+      </svg>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
